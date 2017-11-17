@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<!-- 视图窗口，移动端特属的标签。 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no">
+
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit" ds>
+
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- pc端调整页面兼容代码 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+		<title>YCT VR Cinema Information Center </title>
+		<link rel="stylesheet" href="css/normal.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/swiper.min.css">
+	</head>
+
+	<body>
+		<div>
+			<!--1.世界地图合作伙伴地标-->
+			<div class="worldmap2 worldmap-con2">
+				<div class="worldmap-con" id="worldMap">
+				<!--<img src="img/worldMap2.png" alt="" />-->
+			</div>
+		</div>
+		<!--2.内容-->
+		<div class="content">
+			<!--2.1标题-->
+			<header>
+				<h2>
+					<img src="img/title.png" alt="" />
+				</h2>
+			</header>
+			<div class="to">
+				<!--2.2左边栏-->
+				<div class="left">
+					<div class="lefta">
+						<h3>影院：<span class="data">CELBS模拟影院</span></h3>
+						<h3 id="zhuangtai">状态：
+									<span class="data">营业中</span>			
+								</h3>
+						<h2 id="yingpianbaio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影片表：<span class="data">Package06</span></h2>
+						<h2 id="paipianbiao">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;排片表：<span class="data">170907</span></h2>
+
+						<h3 id="yuancheng">远程：<span  id="remotedata"  class="data">未连接</span><span class="circlec"></span></h3>
+
+						<h3 id="bendi">本地：<span id="localdata" class="lianjie">未连接</span><span class="circlec"></span>	</h3>
+
+						<h2 id="shuliang">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设备数量：<span id="devicedata" class="data">0</span></h2>
+						<h3 id="moshi">模式：
+									<span id="moshidata" class="data">管理员</span>
+								</h3>
+						<h3 id="id">ID：
+									<span class="id">IPAD 04</span>
+								</h3>
+					</div>
+					<div class="leftb">
+						<div class="biaoti">Playlist</div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="">
+									<div class="top">a</div>
+									<div class="con">Lorem ipsum dolor sit amet, consectetur adipisicing elit. tibus molestiae.</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="">
+									<div class="top">b</div>
+									<div class="con">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus exp autem!</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="">
+									<div class="top">c</div>
+									<div class="con">Lorem ipsum dolor sit amet, consectetur adipisicing elitsamu ernatur autem!</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="">
+									<div class="top">d</div>
+									<div class="con">Lorem ipsum dolor sit amet, consectetur adipisicing elitsamu ernatur autem!</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="">
+									<div class="top">e</div>
+									<div class="con">Lorem ipsum dolor sit amet, consectetur adipisicing elitsamu ernatur autem!</div>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<!--2.3右边栏-->
+				<div class="right">
+					<div class="righta">
+						<div class="biaoti">Device Status</div>
+						<div id="table">
+							<div class="thead">
+								<div>ID</div>
+								<div>TEMP.</div>
+								<div>BAT.</div>
+								<div>Headset</div>
+								<div>Status</div>
+								<div>Process</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+							<div class="tbody">
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+								<div>-</div>
+							</div>
+						</div>
+					</div>
+					<div class="rightb">
+						<div class="biaoti">Box Office</div>
+						<div class="piaofang" id="ZhuzhuangChart"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--script-->
+		<!--1.reset.js引在jQuery之前，HTMLfont-size不用设置100px,其余全部用rem，宽高定死-->
+		<script type="text/javascript" src="js/reset.js"></script>
+		<!--2.jquery-->
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<!--3.最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/plugin/echarts.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/map.js"></script>
+		<script src="js/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				loop: true,
+				paginationClickable: true,
+				spaceBetween: 317.16,
+				centeredSlides: true,
+				autoplay: 2000,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+	</body>
+
+</html>
